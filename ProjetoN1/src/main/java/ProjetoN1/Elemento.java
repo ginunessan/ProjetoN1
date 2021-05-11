@@ -9,3 +9,5 @@ public class Elemento {
     private int desvantagem;
     
 }
+
+
