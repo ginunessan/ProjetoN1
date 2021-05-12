@@ -5,7 +5,7 @@ package ProjetoN1;
 public class Monstro {
     
     private String nome;
-    private Elemento elemento;
+    private Elemento elemento = new Elemento();
     private int vida;
     private int forca;
     private int defesa;
@@ -67,11 +67,12 @@ public class Monstro {
     public void setVelocidade(int velocidade) {
         this.velocidade = velocidade;
     }
-    
+   
     
     
     public void Amon(String nome, Elemento elemento, int vida, int forca, int defesa, int velocidade){
        this.nome = "Amon";
+       elemento.getFogo();
        this.vida = 10;
        this.forca = 10;
        this.defesa = 10;
@@ -80,6 +81,7 @@ public class Monstro {
     
     public void Mut(String nome, Elemento elemento, int vida, int forca, int defesa, int velocidade){
        this.nome = "Mut";
+       elemento.getAgua();
        this.vida = 15;
        this.forca = 15;
        this.defesa = 15;
@@ -88,6 +90,7 @@ public class Monstro {
     
     public void Osiris(String nome, Elemento elemento, int vida, int forca, int defesa, int velocidade){
        this.nome = "Osiris";
+       elemento.getGrama();
        this.vida = 20;
        this.forca = 20;
        this.defesa = 20;
@@ -96,6 +99,7 @@ public class Monstro {
     
     public void Seth(String nome, Elemento elemento, int vida, int forca, int defesa, int velocidade){
        this.nome = "Seth";
+       elemento.getFogo();
        this.vida = 9;
        this.forca = 9;
        this.defesa = 9;
@@ -104,6 +108,7 @@ public class Monstro {
     
     public void Isis(String nome, Elemento elemento, int vida, int forca, int defesa, int velocidade){
        this.nome = "Isis";
+       elemento.getAgua();
        this.vida = 13;
        this.forca = 13;
        this.defesa = 13;
@@ -112,6 +117,7 @@ public class Monstro {
     
     public void Horus(String nome, Elemento elemento, int vida, int forca, int defesa, int velocidade){
        this.nome = "Horus";
+       elemento.getGrama();
        this.vida = 15;
        this.forca = 15;
        this.defesa = 15;
