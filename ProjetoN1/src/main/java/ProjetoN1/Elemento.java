@@ -4,45 +4,23 @@ package ProjetoN1;
 
 public class Elemento {
     
-    private String elemento;
-    
+    private final int fogo = 15;
+    private final int agua = 10;
+    private final int grama = 5;
 
-    public Elemento(String elemento) {
-        this.elemento = elemento;
-        
-    }
-
-    public String getElemento() {
-        return elemento;
+    public Elemento() {
     }
 
-    public void setElemento(String elemento) {
-        this.elemento = elemento;
+    public int getFogo() {
+        return fogo;
     }
 
-    
-    
-    public void Fogo(String elemento){
-    
-        this.elemento = "Fogo";
-        
+    public int getAgua() {
+        return agua;
     }
-    
-    public void Agua(String elemento){
-    
-        this.elemento = "Agua";
-        
+
+    public int getGrama() {
+        return grama;
     }
-    
-    public void Grama(String elemento){
-    
-        this.elemento = "Grama";
-        
-    }
-    
     
 }
-
-
-
-
